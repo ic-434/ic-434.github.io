@@ -1,0 +1,189 @@
+#noop {
+    display: none;
+}
+header {
+    opacity: 0;
+    animation: ani 2.5s forwards;
+    color: rgb(207, 207, 207);
+}
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  .line {
+    height: 1px;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-bottom: 10px;
+    background-color: #e9ecef;
+  }
+  .text-justify {
+    text-align: justify;
+  }
+  
+  .main-img {
+    width: 200px;
+  }
+
+
+  .contacts {
+    display: flex;
+  }
+  
+  .contacts-bg{
+    background: url(../img/contacts-bg.jpg) no-repeat center;
+    background-size: cover;
+  }
+  
+  .contacts__forms {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .contacts__title{
+    color: #333;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    line-height: 47px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .contacts__btn{
+    background: white;
+    color: #6c757d;
+    padding: 17px 60px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+  }
+  
+  .contacts__btn:hover{
+    background-color: #6c757d;
+    color: wheat;
+  }
+  
+  
+  /*Оформление формы*/
+  .contacts__form-content{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  
+  .contacts__form-label{
+    font-size: 14px;
+    color: #09090d;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+  
+  .contacts__form-input{
+    z-index: 10;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    font-size: 16px;
+    background: 0 0;
+    outline: 0;
+    padding: 15px 0;
+    width: 100%;
+    color: rgba(58,65,60,.75);
+    border-radius: 0;
+    margin-bottom: 30px;
+  }
+  
+  textarea.contacts__form-input{
+    padding: 10px;
+    height: 130px;
+    resize: none;
+    border: 1px solid rgba(0,0,0,.3);
+  }
+  
+  
+  /*Сообщение об отправке*/
+  .contacts__massage {
+    display: none;
+    align-items: center;
+    border: solid 1px #ddd;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contacts__massage.active ~ * {
+    opacity: 1;
+    filter: blur(20px); 
+  }
+  
+  .contacts__massage img{
+    width: 90px;
+  }
+  
+  .contacts__info{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0;
+  }
+  
+  .contacts__info-text{
+    font-size: 14px;
+    color: #000000; 
+    margin-bottom: 0;
+  }
+  
+  /*Адаптивность======================*/
+  @media (max-width: 1050px) {
+    .contacts__forms{
+      width: 100%;
+    }
+    .contacts-bg{
+      background: none;
+    }
+  }
+  
+  @media (max-width: 990px) {
+    .default{
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  
+  }
+  
+  @media (max-width: 770px) {
+    .contacts__title{
+      font-size: 20px;
+    }
+  
+  }
+  
+  @media (max-width: 575px) {
+    .default{
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  
+    .contacts__forms{
+      padding: 15px;
+    }
+  
+  }
+  

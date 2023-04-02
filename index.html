@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="container-fluid text-center">
+      <h1 font-monospace>junior frontend developer</h1>
+    </header>
+
+    <div class="container">
+      <p class="font-monospace my-text">Hello, it's me. My name is Umar and my nickname is "ic-434" </p>
+    </div>
+
+    <div class="line"></div>
+
+
+
+    <div class="container font-monospace ">
+
+      <p class="text-uppercase font-monospace">резюме</p>
+
+        <div class="row">
+          <div class="col text-justify">Акбалин Умар Даутович 1991 г.р. Образование высшее, окончил БГУ по специальности педагог-психолог. В 2018 - 2021 г. Работал психологом в Ресурсном центре "Семья" г.Уфа. С 2022 года изучаю веб техналогии, программирование. Постоянно учусь. </div>
+
+          <div class="col border-start text-center pt-3">
+            <a type="button" class="btn btn-outline-secondary" href="./assets/doc/resume.docx" download="">скачать резюме</a>
+          </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="line mt-2"></div>
+
+    <div class="container-fluid">
+
+      <p class="text-uppercase font-monospace mt-3">skills / навыки</p>
+      
+      <div class="row justify-content-center font-monospace mb-2">
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">HTML</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">гипертекстовая разметка</h6>
+            <p class="card-text">Браузеры отображают структуру страницы читая документ с расширением .html</p>
+            <a href="https://ru.wikipedia.org/wiki/HTML" class="card-link" target="_blank">wikipedia link</a>
+          </div>
+        </div>
+  
+        <div class="card mx-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">CSS / scss</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">каскадные таблицы стилей</h6>
+            <p class="card-text">испульзуется для визуального оформления страницы</p>
+            <a href="https://ru.wikipedia.org/wiki/CSS" class="card-link" target="_blank">wikipedia link</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">JavaScript</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">язык программирования</h6>
+            <p class="card-text"> Си-подобный язык программирования, в веб разработке занимает основную нишу</p>
+            <a href="https://ru.wikipedia.org/wiki/JavaScript" class="card-link" target="_blank">wikipedia link</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="row justify-content-center font-monospace mb-3">
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">React / Redux</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Библиотека</h6>
+            <p class="card-text">Позволяет  оптимально обновлять браузер, беспечивает высокую скорость работы</p>
+            <a href="https://ru.wikipedia.org/wiki/React" class="card-link" target="_blank">wikipedia link</a>
+          </div>
+        </div>
+
+        <div class="card mx-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Git / GitLab</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">система управления версиями</h6>
+            <p class="card-text">позволяет удалённо хранить пакеты, работать в команде</p>
+            <a href="https://ru.wikipedia.org/wiki/HTML" class="card-link" target="_blank">wikipedia link</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Bootstrap</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">фреймворк</h6>
+            <p class="card-text">свободный набор инструментов для создания сайтов и веб-приложений</p>
+            <a href="https://ru.wikipedia.org/wiki/Bootstrap_(%D1%84%D1%80%D0%B5%D0%B9%D0%BC%D0%B2%D0%BE%D1%80%D0%BA)" class="card-link" target="_blank">wikipedia link</a>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text-uppercase font-monospace mt-3">Написать сообщение</p>
+      
+      <div class="container font-monospace">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <form id="contacts__form">
+              <div class="contacts__form-content">
+                <label class="contacts__form-label">Ваше имя</label>
+                <input class="contacts__form-input" name="name" type="name" required placeholder="имя">
+              </div>
+              <div class="contacts__form-content">
+                <label class="contacts__form-label">номер</label>
+                <input class="contacts__form-input" name="tel" type="tel" required placeholder="+7 ">
+              </div>
+              <div class="contacts__form-content">
+                <label class="contacts__form-label">Сообщение</label>
+                <textarea class="contacts__form-input" name="massage" type="text" placeholder="Ваше сообщение"></textarea>
+              </div>
+              <div class="contacts__btn-box">
+                <button class="contacts__btn" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+
+  
+
+    
+
+      <script src="./assets/js/jquery-3.6.4.min.js"></script>
+      <script src="./assets/js/bootstrap.bundle.min.js"></script>
+      <script src="./assets/js/script.js"></script>
+</body>
+</html>
