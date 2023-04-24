@@ -5,7 +5,23 @@ body {
   background-color: cadetblue;
   margin: 0;
 }
-
+.hover {
+  display: none;
+}
+.nickname:hover {
+  cursor: pointer;
+}
+.nickname:hover .hover {
+  display: contents;
+}
+.modal{
+  display: none;
+  padding: 4rem;
+  background-color: darkslategrey;
+}
+.madal_active {
+  display: block;
+}
 header {
     opacity: 0;
     animation: ani 2.5s forwards;
