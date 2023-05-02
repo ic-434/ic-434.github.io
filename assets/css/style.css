@@ -2,7 +2,7 @@
     display: none;
 }
 body {
-  background-color: black;
+  background-color: rgb(161, 161, 161);
   margin: 0;
   position: relative;
   filter: blur(4px);
