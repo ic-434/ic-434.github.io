@@ -2,10 +2,8 @@
     display: none;
 }
 body {
-  background-color: rgb(161, 161, 161);
+  background-color: black;
   margin: 0;
-  position: relative;
-  filter: blur(4px);
 }
 canvas#canvas {
   display: block;
